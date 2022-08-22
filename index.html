@@ -34,22 +34,25 @@
                     <img src="pic/lionel-messi.jpg" class="w-100" alt="">
                     <h3>Lionel Messi</h3>
                     <h6>36 Goals . 120 Assist</h6>
-                    <input type="button" value="Select">
+                    <input id="btn-messi" type="button" value="Select">
                 </div>
                 <div class="col-3 border border-2">
                     <img src="pic/neymar-jr.jpg" class="w-100" alt="">
                     <h3>Neymar Jr</h3>
                     <h6>36 Goals . 120 Assist</h6>
-                    <input type="button" value="Select">
+                    <input id="btn-neymar" type="button" value="Select">
                 </div>
                 <div class="col-3 border border-2">
                     <img src="pic/kylian-mbappe.jpg" class="w-100" alt="">
                     <h3>Kylian Mbappe</h3>
                     <h6>36 Goals . 120 Assist</h6>
-                    <input type="button" value="Select">
+                    <input id = "btn-kylian" type="button" value="Select">
                 </div>
                 <div class="col-3 border border-2">
                     <h1>Selected - V</h1>
+                    <ol id="select-player">
+                        
+                    </ol>
                 </div>
             </div>
 
@@ -58,32 +61,32 @@
                     <img src="pic/vitor-machado.jpg" class="w-100" alt="">
                     <h3>Vitor Machado</h3>
                     <h6>36 Goals . 120 Assist</h6>
-                    <input type="button" value="Select">
+                    <input id = "btn-vitor" type="button" value="Select">
                 </div>
                 <div class="col-3 border border-2">
                     <img src="pic/sergio-ramos.jpg" class="w-100" alt="">
                     <h3>Sergio Ramos</h3>
                     <h6>36 Goals . 120 Assist</h6>
-                    <input type="button" value="Select">
+                    <input id = "btn-sergio" type="button" value="Select">
                 </div>
                 <div class="col-3 border border-2">
                     <img src="pic/renato-sanches.jpg" class="w-100" alt="">
                     <h3>Renato Sanches</h3>
                     <h6>36 Goals . 120 Assist</h6>
-                    <input type="button" value="Select">
+                    <input id = "btn-renato" type="button" value="Select">
                 </div>
                 <div class="col-3 border border-2">
                     <h1>Budget</h1>
                     <h6>Per Player</h6>
-                    <input type="text">
-                    <input type="button" value="Calculate">
-                    <h6>Player Expenses $5000</h6>
+                    <input id="player-rate" type="text">
+                    <input id="btn-calculate" type="button" value="Calculate">
+                    <h6>Player Expenses $ <section id="player-expenses">0</section></h6>
                     <h6>Manager</h6>
-                    <input type="text">
+                    <input id="manager-cost" type="text">
                     <h6>Coach</h6>
-                    <input type="text">
-                    <input type="button" value="Calculate Total">
-                    <h6>Total $5000</h6>
+                    <input id="coach-cost" type="text">
+                    <input id="total-calculate" type="button" value="Calculate Total">
+                    <h6>Total $ <span id="total-cost">0</span></h6>
                 </div>
             </div>
 
