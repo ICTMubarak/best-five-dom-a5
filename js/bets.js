@@ -1,6 +1,6 @@
 var i = 0;
 function setPlayer(playerName){
-    if(i == 5){
+    if(i > 4){
         alert('No more 5');
         return;
     }
@@ -13,28 +13,52 @@ function setPlayer(playerName){
 
 let btnMessi = document.getElementById('btn-messi').addEventListener('click', function(){
     let playerName = 'Lionel Messi';
+    if(i<5){
+        document.getElementById('btn-messi').disabled = true;
+    }
     setPlayer(playerName);
+
 })
 
 let btnNeymar = document.getElementById('btn-neymar').addEventListener('click', function(){
     let playerName = 'Neymar Jr';
+    if(i<5){
+        document.getElementById('btn-neymar').disabled = true;
+    }
     setPlayer(playerName);
+    
 })
 let btnKylian = document.getElementById('btn-kylian').addEventListener('click', function(){
     let playerName = 'Kylian Mbappe';
+    if(i<5){
+        document.getElementById('btn-kylian').disabled = true;
+    }
     setPlayer(playerName);
+    
 })
 let btnVitor = document.getElementById('btn-vitor').addEventListener('click', function(){
     let playerName = 'Vitor Machado';
+    if(i<5){
+        document.getElementById('btn-vitor').disabled = true;
+    }
     setPlayer(playerName);
+    
 })
 let btnSergio = document.getElementById('btn-sergio').addEventListener('click', function(){
     let playerName = 'Sergio Ramos';
+    if(i<5){
+        document.getElementById('btn-sergio').disabled = true;
+    }
     setPlayer(playerName);
+    
 })
 let btnRenato = document.getElementById('btn-renato').addEventListener('click', function(){
     let playerName = 'Renato Sanches';
+    if(i<5){
+        document.getElementById('btn-renato').disabled = true;
+    }
     setPlayer(playerName);
+    
 })
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
