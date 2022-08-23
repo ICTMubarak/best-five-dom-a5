@@ -1,7 +1,7 @@
 var i = 0;
 function setPlayer(playerName){
     if(i > 4){
-        alert('No more 5');
+        alert('You cannot select more than five players.');
         return;
     }
     const selectPlayer = document.getElementById('select-player');
@@ -66,7 +66,7 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     let playerRateString = playerRate.value;
     let playerRateAmount = parseFloat(playerRateString);
     if(isNaN(playerRateAmount)){
-        alert('Correct your player input');
+        alert('Please correct the input for per player.');
         return;
     }
 
@@ -82,7 +82,7 @@ document.getElementById('total-calculate').addEventListener('click', function(){
     let managerCostAmount = parseFloat(managerCostString);
 
     if(isNaN(managerCostAmount)){
-        alert('Correct your manager input');
+        alert('Please correct the input for Manager.');
         return;
     }
 
@@ -91,7 +91,7 @@ document.getElementById('total-calculate').addEventListener('click', function(){
     let coachCostAmount = parseFloat(coachCostString);
 
     if(isNaN(coachCostAmount)){
-        alert('Correct your coach input');
+        alert('Please correct the input for Coach.');
         return;
     }
 
