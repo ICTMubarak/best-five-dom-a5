@@ -1,4 +1,8 @@
+// Dicliar a gloval variable for count the selected players.
 var i = 0;
+
+// a common function to set li with player name.
+
 function setPlayer(playerName){
     if(i > 4){
         alert('You cannot select more than five players.');
@@ -10,6 +14,8 @@ function setPlayer(playerName){
     selectPlayer.appendChild(li);
     i = i + 1;
 }
+
+// Event handlar for select a player.
 
 let btnMessi = document.getElementById('btn-messi').addEventListener('click', function(){
     let playerName = 'Lionel Messi';
@@ -61,6 +67,8 @@ let btnRenato = document.getElementById('btn-renato').addEventListener('click', 
     
 })
 
+// For calculate the total palyer amount. 
+
 document.getElementById('btn-calculate').addEventListener('click', function(){
     let playerRate = document.getElementById('player-rate');
     let playerRateString = playerRate.value;
@@ -75,6 +83,8 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     document.getElementById('player-expenses').innerText = totalPlayerRate;
     
 })
+
+// Calculate total cost.
 
 document.getElementById('total-calculate').addEventListener('click', function(){
     let managerCost = document.getElementById('manager-cost');
